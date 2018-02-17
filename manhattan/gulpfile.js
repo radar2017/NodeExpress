@@ -28,17 +28,17 @@ gulp.task('compress', function() {
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(gulp.dest('public/css')); // folder name for css minified
+        .pipe(gulp.dest('public/css'));
 });
 
 gulp.task('concat', function() {
-    gulp.src(['public/css/style.min.css']) // list of files to concatenate
+    gulp.src(['public/css/style.min.css'])
         .pipe(concat('style.min.css'))
-        .pipe(gulp.dest('css'));
+        .pipe(gulp.dest('public/css'));
 });
 
 gulp.task('default', ['sass', 'compress'], function() {
-    gulp.watch('public/css-dev/*.scss', ['sass']); // which files are observed and what tasks to use on file changes
-    gulp.watch(['public/js-dev/*.js', 'public/css-dev/*.css'], ['compress']); // which files are observed and what tasks to use on file changes
-    gulp.watch('public/css/*.min.css', ['concat']); // which files are observed and what tasks to use on file changes
+    gulp.watch('public/css-dev/*.scss', ['sass']);
+    gulp.watch(['public/js-dev/*.js', 'public/css-dev/*.css'], ['compress']);
+    gulp.watch('public/css/*.min.css', ['concat']);
 });
