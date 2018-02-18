@@ -41,3 +41,97 @@ npm WARN optional SKIPPING OPTIONAL DEPENDENCY: Exit status 1
 
 + firebase-tools@3.17.4
 added 8 packages and updated 1 package in 47.196s
+
+-----------------------------------------------------------------------------------------------------------------------
+wedle OverStack:
+ABY ZAINSTALOWAÆ FIREBASE NALE¯Y WCZEŒNIEJ ZAINSTALWOAC NASTÊPUJ¥CE PAKIETY:
+
+If you're using Windows you can now install all node-gyp dependencies with single command (NOTE: Run As Admin in Windows PowerShell):
+
+ $ npm install --global --production windows-build-tools
+
+and then install the package
+
+ $ npm install --global node-gyp
+ 
+-----------------------------------------------------------------------------------------------------------------------
+i potem:
+
+ling source file ..\third_party\boringssl\crypto\bio\pair.c)
+..\third_party\boringssl\crypto\bio\hexdump.c(72): error C2061: syntax error: identifier 'b' [C:\Users\Marcin\AppData\R
+oaming\npm\node_modules\firebase-tools\node_modules\grpc\build\boringssl.vcxproj]
+..\third_party\boringssl\crypto\bio\bio.c(284): error C2143: syntax error: missing ')' before 'constant' [C:\Users\Marc
+in\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\grpc\build\boringssl.vcxproj]
+C:\Users\Marcin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\grpc\third_party\boringssl\include\openssl
+/mem.h(96): warning C4028: formal parameter 1 different from declaration (compiling source file ..\third_party\boringss
+l\crypto\bio\file.c) [C:\Users\Marcin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\grpc\build\boringssl
+.vcxproj]
+C:\Users\Marcin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\grpc\third_party\boringssl\include\openssl
+/base.h(155): warning C4005: 'OPENSSL_EXPORT': macro redefinition (compiling source file ..\third_party\boringssl\crypt
+o\bio\pair.c) [C:\Users\Marcin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\grpc\build\boringssl.vcxpro
+j]
+  C:\Users\Marcin\.node-gyp\8.9.4\include\node\openssl/e_os2.h(276): note: see previous definition of 'OPENSSL_EXPORT'
+  (compiling source file ..\third_party\boringssl\crypto\bio\pair.c)
+..\third_party\boringssl\crypto\bio\hexdump.c(72): error C2059: syntax error: ';' [C:\Users\Marcin\AppData\Roaming\npm\
+node_modules\firebase-tools\node_modules\grpc\build\boringssl.vcxproj]
+..\third_party\boringssl\crypto\bio\bio.c(284): error C2143: syntax error: missing '{' before 'constant' [C:\Users\Marc
+in\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\grpc\build\boringssl.vcxproj]
+C:\Users\Marcin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\grpc\third_party\boringssl\include\openssl
+/mem.h(96): warning C4028: formal parameter 2 different from declaration (compiling source file ..\third_party\boringss
+l\crypto\bio\file.c) [C:\Users\Marcin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\grpc\build\boringssl
+.vcxproj]
+C:\Users\Marcin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\grpc\third_party\boringssl\include\openssl
+/base.h(176): error C2371: 'CRYPTO_THREADID': redefinition; different basic types (compiling source file ..\third_party
+\boringssl\crypto\bio\pair.c)..\third_party\boringssl\crypto\bio\hexdump.c(72): error C2059: syntax error: ')' [C:\User
+s\Marcin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\grpc\build\boringssl.vcxproj]
+
+  C:\Users\Marcin\.node-gyp\8.9.4\include\node\openssl/crypto.h(451): note: see declaration of 'CRYPTO_THREADID' (compi
+  ling source file ..\third_party\boringssl\crypto\bio\pair.c)..\third_party\boringssl\crypto\bio\bio.c(284): error C20
+  59: syntax error: 'constant'
+
+C:\Users\Marcin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\grpc\third_party\boringssl\include\openssl
+/mem.h(102): error C2143: syntax error: missing ')' before '(' (compiling source file ..\third_party\boringssl\crypto\b
+io\file.c) [C:\Users\Marcin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\grpc\build\boringssl.vcxproj]
+..\third_party\boringssl\crypto\bio\hexdump.c(72): error C2449: found '{' at file scope (missing function header?) [C:\
+Users\Marcin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\grpc\build\boringssl.vcxproj]
+..\third_party\boringssl\crypto\bio\bio.c(284): error C2059: syntax error: ')' [C:\Users\Marcin\AppData\Roaming\npm\nod
+e_modules\firebase-tools\node_modules\grpc\build\boringssl.vcxproj]
+C:\Users\Marcin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\grpc\third_party\boringssl\include\openssl
+/base.h(249): error C2371: 'ECDSA_METHOD': redefinition; different basic types (compiling source file ..\third_party\bo
+ringssl\crypto\bio\pair.c) [C:\Users\Marcin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\grpc\build\bor
+ingssl.vcxproj]
+C:\Users\Marcin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\grpc\third_party\boringssl\include\openssl
+/mem.h(102): error C2059: syntax error: ')' (compiling source file ..\third_party\boringssl\crypto\bio\file.c) [C:\User
+s\Marcin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\grpc\build\boringssl.vcxproj]
+  C:\Users\Marcin\.node-gyp\8.9.4\include\node\openssl/ossl_typ.h(152): note: see declaration of 'ECDSA_METHOD' (compil
+  ing source file ..\third_party\boringssl\crypto\bio\pair.c)
+..\third_party\boringssl\crypto\bio\hexdump.c(76): error C2059: syntax error: '}' [C:\Users\Marcin\AppData\Roaming\npm\
+node_modules\firebase-tools\node_modules\grpc\build\boringssl.vcxproj]
+C:\Users\Marcin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\grpc\third_party\boringssl\include\openssl
+/mem.h(102): error C2059: syntax error: 'string' (compiling source file ..\third_party\boringssl\crypto\bio\file.c) [C:
+\Users\Marcin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\grpc\build\boringssl.vcxproj]
+..\third_party\boringssl\crypto\bio\hexdump.c(86): error C2143: syntax error: missing ')' before '*' [C:\Users\Marcin\A
+ppData\Roaming\npm\node_modules\firebase-tools\node_modules\grpc\build\boringssl.vcxproj]
+..\third_party\boringssl\crypto\bio\bio.c(290): error C2059: syntax error: '(' [C:\Users\Marcin\AppData\Roaming\npm\nod
+e_modules\firebase-tools\node_modules\grpc\build\boringssl.vcxproj]
+C:\Users\Marcin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\grpc\third_party\boringssl\include\openssl
+/mem.h(102): error C2059: syntax error: 'constant' (compiling source file ..\third_party\boringssl\crypto\bio\file.c) [
+C:\Users\Marcin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\grpc\build\boringssl.vcxproj]
+..\third_party\boringssl\crypto\bio\hexdump.c(86): error C2143: syntax error: missing '{' before '*' [C:\Users\Marcin\A
+ppData\Roaming\npm\node_modules\firebase-tools\node_modules\grpc\build\boringssl.vcxproj]
+C:\Users\Marcin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\grpc\third_party\boringssl\include\openssl
+/mem.h(78): warning C4005: 'OPENSSL_malloc': macro redefinition (compiling source file ..\third_party\boringssl\crypto\
+bio\pair.c) [C:\Users\Marcin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\grpc\build\boringssl.vcxproj]
+  C:\Users\Marcin\.node-gyp\8.9.4\include\node\openssl/crypto.h(381): note: see previous definition of 'OPENSSL_malloc'
+   (compiling source file ..\third_party\boringssl\crypto\bio\pair.c)
+..\third_party\boringssl\crypto\bio\bio.c(290): error C2143: syntax error: missing ')' before '(' [C:\Users\Marcin\AppD
+ata\Roaming\npm\node_modules\firebase-tools\node_modules\grpc\build\boringssl.vcxproj]
+..\third_party\boringssl\crypto\bio\hexdump.c(87): error C2371: 'size_t': redefinition; different basic types [C:\Users
+\Marcin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\grpc\build\boringssl.vcxproj]
+C:\Users\Marcin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\grpc\third_party\boringssl\include\openssl
+/mem.h(79): warning C4005: 'OPENSSL_realloc': macro redefinition (compiling source file ..\third_party\boringssl\crypto
+\bio\pair.c) [C:\Users\Marcin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\grpc\build\boringssl.vcxproj
+]
+  ..\third_party\boringssl\crypto\bio\hexdump.c: note: see declaration of 'size_t'C:\Users\Marcin\.node-gyp\8.9.4\inclu
+  de\node\openssl/crypto.h(384): note: see previous definition of 'OPENSSL_realloc' (compiling source file ..\third_par
+  ty\boringssl\crypto\bio\pair.c)
