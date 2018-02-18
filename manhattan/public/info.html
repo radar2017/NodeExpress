@@ -2,13 +2,31 @@
 <html>
 
 <head>
-    <title>Project Manhattan - Static Page Test</title>
-    <link href="css\styles.css"></link>
+    <title>Project Manhattan</title>
+    <link rel="stylesheet" href="css\style.min.css"></link>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
-    Static Page Test dedwe
-
+    <h1>Static Page Test</h1>
+    <button class="js-get-data get-data">Get Data</button>
+    <div id="data"></div>
 </body>
+
+<script src="js-dev/logic.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyAA9f-Mft7aXwC_QmCwm20okPJUYeArI8w",
+        authDomain: "nodeexpress-fc15e.firebaseapp.com",
+        databaseURL: "https://nodeexpress-fc15e.firebaseio.com",
+        projectId: "nodeexpress-fc15e",
+        storageBucket: "nodeexpress-fc15e.appspot.com",
+        messagingSenderId: "56925048296"
+    };
+    firebase.initializeApp(config);
+</script>
 
 </html>
